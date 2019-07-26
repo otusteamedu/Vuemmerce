@@ -9,7 +9,8 @@
     "development": "vue-cli-service build --mode development",
     "express": "vue-cli-service express:watch",
     "express:run": "vue-cli-service express:run",
-    "production": "vue-cli-service build"
+    "production": "vue-cli-service build",
+    "test": "vue-cli-service test:unit"
   },
   "dependencies": {
     "@mdi/font": "^3.5.95",
@@ -33,6 +34,7 @@
     "@fortawesome/fontawesome-free": "^5.6.3",
     "@vue/cli-plugin-babel": "^3.2.2",
     "@vue/cli-service": "^3.2.3",
+    "@vue/test-utils": "^1.0.0-beta.20",
     "babel-plugin-transform-runtime": "^6.23.0",
     "node-sass": "^4.12.0",
     "sass-loader": "^7.1.0",
