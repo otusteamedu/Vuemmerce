@@ -9,7 +9,8 @@
     "development": "vue-cli-service build --mode development",
     "express": "vue-cli-service express:watch",
     "express:run": "vue-cli-service express:run",
-    "production": "vue-cli-service build"
+    "production": "vue-cli-service build",
+    "test:e2e": "node_modules/.bin/cypress open"
   },
   "dependencies": {
     "@mdi/font": "^3.5.95",
@@ -19,9 +20,11 @@
     "bulma": "^0.7.2",
     "bulma-helpers": "^0.3.6",
     "cors": "^2.8.5",
+    "cypress": "^3.4.0",
     "express": "latest",
     "kladrapi-for-node": "^0.0.2",
     "moment": "^2.24.0",
+    "nightwatch": "^1.1.13",
     "vue": "^2.5.21",
     "vue-cli-plugin-express": "^1.0.0",
     "vue-i18n": "^8.12.0",
