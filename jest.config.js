@@ -9,8 +9,8 @@ module.exports = {
   transform: {
     "^.+\\.vue$": "vue-jest",
     "^.+\\.(css|styl|less|sass|scss|png|jpg|ttf|woff|woff2)$": "jest-transform-stub",
-    "^.+\\.svg$": "<rootDir>/svgTransform.js",
-    "^.+\\.jsx?$": "babel-jest"
+    //"^.+\\.svg$": "<rootDir>/svgTransform.js",
+    //"^.+\\.jsx?$": "babel-jest"
   },
   transformIgnorePatterns: [
     "<rootDir>/node_modules/(?!(element-ui|vue-awesome))"

@@ -17,7 +17,7 @@ describe("App.vue", async () => {
     expect(app).toBeTruthy();
   });
  
-  it("gotoPage() redirects to /page/", async () => {
+  xit("gotoPage() redirects to /page/", async () => {
     fakeLogin();
     const wrapper = shallowMount(component, {
       localVue,

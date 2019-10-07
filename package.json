@@ -10,10 +10,11 @@
     "express": "vue-cli-service express:watch",
     "express:run": "vue-cli-service express:run",
     "production": "vue-cli-service build",
-    "test": "vue-cli-service test:unit"
+    "test": "jest"
   },
   "dependencies": {
     "@mdi/font": "^3.5.95",
+    "babel-core": "^6.26.3",
     "babel-polyfill": "^6.26.0",
     "babel-runtime": "^6.26.0",
     "buefy": "^0.7.3",
@@ -34,10 +35,15 @@
     "@fortawesome/fontawesome-free": "^5.6.3",
     "@vue/cli-plugin-babel": "^3.2.2",
     "@vue/cli-service": "^3.2.3",
-    "@vue/test-utils": "^1.0.0-beta.20",
+    "@vue/test-utils": "^1.0.0-beta.29",
     "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "jest": "^24.9.0",
+    "jest-serializer-vue": "^2.0.2",
+    "jest-transform-stub": "^2.0.0",
     "node-sass": "^4.12.0",
     "sass-loader": "^7.1.0",
+    "vue-jest": "^3.0.5",
     "vue-template-compiler": "^2.5.21"
   },
   "eslintConfig": {
