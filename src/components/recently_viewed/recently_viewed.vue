@@ -21,7 +21,6 @@ export default {
   },
   data() {
     return {
-      id: "",
       noProductLabel: "No product found",
       productsFiltered: []
     };
@@ -57,10 +56,8 @@ export default {
   methods: {
     repeatedItem(item) {
       let viewedProductsArr = this.$store.state.viewedProductsArr;
-      for (let i = 0; i < viewedProductsArr.length; i++) {
-        if (viewedProductsArr[i] === parseInt(item)) {
-          return true;
-        }
+      if(viewedProductsArr.indexOf(parseInt(item))){
+        return true;
       }
       return false;
     }
