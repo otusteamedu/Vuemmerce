@@ -5,7 +5,7 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: initalState,
-  
+
   getters: {
     getCategoryById: state => id => {
       return state.categories.find(category => category.id == id);
@@ -74,7 +74,7 @@ export default new Vuex.Store({
       return state.news.find(newItem => newItem.id == id);
     },
   },
-  
+
   mutations: {
     addToCart: (state, id) => {
       state.products.forEach(el => {
@@ -116,7 +116,7 @@ export default new Vuex.Store({
     setSearchParams: (state, searchParams) => {
       state.searchParams = searchParams
     },
-    
+
     saveAvatar: (state, avatarBinary) => {
       state.userInfo.avatarBinary = avatarBinary;
     },
@@ -175,9 +175,21 @@ export default new Vuex.Store({
           el.quantity = data.quantity;
         }
       });
+    },
+    changeViewedProductsArr: (state, data) => {
+      let arr = [];
+      if (state.viewedProductsArr.length === 3) {
+        arr = state.viewedProductsArr;
+        arr.shift();
+        arr.push(data);
+        state.viewedProductsArr = arr;
+        localStorage.setItem('viewedProducts', state.viewedProductsArr);
+      } else {
+        state.viewedProductsArr.push(data)
+        localStorage.setItem('viewedProducts', state.viewedProductsArr);
+      }
     }
   },
-  
-  actions: {
-  }
+
+  actions: {}
 });

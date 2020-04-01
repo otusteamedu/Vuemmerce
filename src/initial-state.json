@@ -1,6 +1,5 @@
 {
-  "categories": [
-    {
+  "categories": [{
       "id": 1,
       "title": "Category 1",
       "description": "Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit amet consectetur adipisci[ng] velit",
@@ -19,8 +18,7 @@
       "image": "http://lorempixel.com/640/480/technics/3/"
     }
   ],
-  "products": [
-    {
+  "products": [{
       "id": 1,
       "title": "Product 1",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
@@ -32,48 +30,46 @@
       "isFavourite": false,
       "quantity": 1,
       "category": 1,
-      "images":
-        [
-          {
-              "title": "Slide #1",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          },
-          {
-              "title": "Slide #2",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          },
-          {
-              "title": "Slide #3",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          },
-          {
-              "title": "Slide #4",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          },
-          {
-              "title": "Slide #5",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          },
-          {
-              "title": "Slide #6",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          },
-          {
-              "title": "Slide #7",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          },
-          {
-              "title": "Slide #8",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          },
-          {
-              "title": "Slide #9",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          },
-          {
-              "title": "Slide #10",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          }
+      "images": [{
+          "title": "Slide #1",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        },
+        {
+          "title": "Slide #2",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        },
+        {
+          "title": "Slide #3",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        },
+        {
+          "title": "Slide #4",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        },
+        {
+          "title": "Slide #5",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        },
+        {
+          "title": "Slide #6",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        },
+        {
+          "title": "Slide #7",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        },
+        {
+          "title": "Slide #8",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        },
+        {
+          "title": "Slide #9",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        },
+        {
+          "title": "Slide #10",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        }
       ]
     },
     {
@@ -88,48 +84,46 @@
       "isFavourite": false,
       "quantity": 1,
       "category": 2,
-      "images":
-        [
-          {
-              "title": "Slide #1",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          },
-          {
-              "title": "Slide #2",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          },
-          {
-              "title": "Slide #3",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          },
-          {
-              "title": "Slide #4",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          },
-          {
-              "title": "Slide #5",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          },
-          {
-              "title": "Slide #6",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          },
-          {
-              "title": "Slide #7",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          },
-          {
-              "title": "Slide #8",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          },
-          {
-              "title": "Slide #9",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          },
-          {
-              "title": "Slide #10",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          }
+      "images": [{
+          "title": "Slide #1",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        },
+        {
+          "title": "Slide #2",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        },
+        {
+          "title": "Slide #3",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        },
+        {
+          "title": "Slide #4",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        },
+        {
+          "title": "Slide #5",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        },
+        {
+          "title": "Slide #6",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        },
+        {
+          "title": "Slide #7",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        },
+        {
+          "title": "Slide #8",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        },
+        {
+          "title": "Slide #9",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        },
+        {
+          "title": "Slide #10",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        }
       ]
     },
     {
@@ -144,48 +138,46 @@
       "isFavourite": false,
       "quantity": 1,
       "category": 3,
-      "images":
-        [
-          {
-              "title": "Slide #1",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          },
-          {
-              "title": "Slide #2",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          },
-          {
-              "title": "Slide #3",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          },
-          {
-              "title": "Slide #4",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          },
-          {
-              "title": "Slide #5",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          },
-          {
-              "title": "Slide #6",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          },
-          {
-              "title": "Slide #7",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          },
-          {
-              "title": "Slide #8",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          },
-          {
-              "title": "Slide #9",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          },
-          {
-              "title": "Slide #10",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          }
+      "images": [{
+          "title": "Slide #1",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        },
+        {
+          "title": "Slide #2",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        },
+        {
+          "title": "Slide #3",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        },
+        {
+          "title": "Slide #4",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        },
+        {
+          "title": "Slide #5",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        },
+        {
+          "title": "Slide #6",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        },
+        {
+          "title": "Slide #7",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        },
+        {
+          "title": "Slide #8",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        },
+        {
+          "title": "Slide #9",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        },
+        {
+          "title": "Slide #10",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        }
       ]
     },
     {
@@ -200,48 +192,46 @@
       "isFavourite": false,
       "quantity": 1,
       "category": 1,
-      "images":
-        [
-          {
-              "title": "Slide #1",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          },
-          {
-              "title": "Slide #2",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          },
-          {
-              "title": "Slide #3",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          },
-          {
-              "title": "Slide #4",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          },
-          {
-              "title": "Slide #5",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          },
-          {
-              "title": "Slide #6",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          },
-          {
-              "title": "Slide #7",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          },
-          {
-              "title": "Slide #8",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          },
-          {
-              "title": "Slide #9",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          },
-          {
-              "title": "Slide #10",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          }
+      "images": [{
+          "title": "Slide #1",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        },
+        {
+          "title": "Slide #2",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        },
+        {
+          "title": "Slide #3",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        },
+        {
+          "title": "Slide #4",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        },
+        {
+          "title": "Slide #5",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        },
+        {
+          "title": "Slide #6",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        },
+        {
+          "title": "Slide #7",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        },
+        {
+          "title": "Slide #8",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        },
+        {
+          "title": "Slide #9",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        },
+        {
+          "title": "Slide #10",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        }
       ]
     },
     {
@@ -256,48 +246,46 @@
       "isFavourite": false,
       "quantity": 1,
       "category": 2,
-      "images":
-        [
-          {
-              "title": "Slide #1",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          },
-          {
-              "title": "Slide #2",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          },
-          {
-              "title": "Slide #3",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          },
-          {
-              "title": "Slide #4",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          },
-          {
-              "title": "Slide #5",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          },
-          {
-              "title": "Slide #6",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          },
-          {
-              "title": "Slide #7",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          },
-          {
-              "title": "Slide #8",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          },
-          {
-              "title": "Slide #9",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          },
-          {
-              "title": "Slide #10",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          }
+      "images": [{
+          "title": "Slide #1",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        },
+        {
+          "title": "Slide #2",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        },
+        {
+          "title": "Slide #3",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        },
+        {
+          "title": "Slide #4",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        },
+        {
+          "title": "Slide #5",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        },
+        {
+          "title": "Slide #6",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        },
+        {
+          "title": "Slide #7",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        },
+        {
+          "title": "Slide #8",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        },
+        {
+          "title": "Slide #9",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        },
+        {
+          "title": "Slide #10",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        }
       ]
     },
     {
@@ -312,48 +300,46 @@
       "isFavourite": false,
       "quantity": 1,
       "category": 3,
-      "images":
-        [
-          {
-              "title": "Slide #1",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          },
-          {
-              "title": "Slide #2",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          },
-          {
-              "title": "Slide #3",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          },
-          {
-              "title": "Slide #4",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          },
-          {
-              "title": "Slide #5",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          },
-          {
-              "title": "Slide #6",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          },
-          {
-              "title": "Slide #7",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          },
-          {
-              "title": "Slide #8",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          },
-          {
-              "title": "Slide #9",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          },
-          {
-              "title": "Slide #10",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          }
+      "images": [{
+          "title": "Slide #1",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        },
+        {
+          "title": "Slide #2",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        },
+        {
+          "title": "Slide #3",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        },
+        {
+          "title": "Slide #4",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        },
+        {
+          "title": "Slide #5",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        },
+        {
+          "title": "Slide #6",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        },
+        {
+          "title": "Slide #7",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        },
+        {
+          "title": "Slide #8",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        },
+        {
+          "title": "Slide #9",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        },
+        {
+          "title": "Slide #10",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        }
       ]
     },
     {
@@ -368,48 +354,46 @@
       "isFavourite": false,
       "quantity": 1,
       "category": 1,
-      "images":
-        [
-          {
-              "title": "Slide #1",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          },
-          {
-              "title": "Slide #2",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          },
-          {
-              "title": "Slide #3",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          },
-          {
-              "title": "Slide #4",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          },
-          {
-              "title": "Slide #5",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          },
-          {
-              "title": "Slide #6",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          },
-          {
-              "title": "Slide #7",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          },
-          {
-              "title": "Slide #8",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          },
-          {
-              "title": "Slide #9",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          },
-          {
-              "title": "Slide #10",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          }
+      "images": [{
+          "title": "Slide #1",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        },
+        {
+          "title": "Slide #2",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        },
+        {
+          "title": "Slide #3",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        },
+        {
+          "title": "Slide #4",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        },
+        {
+          "title": "Slide #5",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        },
+        {
+          "title": "Slide #6",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        },
+        {
+          "title": "Slide #7",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        },
+        {
+          "title": "Slide #8",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        },
+        {
+          "title": "Slide #9",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        },
+        {
+          "title": "Slide #10",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        }
       ]
     },
     {
@@ -424,48 +408,46 @@
       "isFavourite": false,
       "quantity": 1,
       "category": 2,
-      "images":
-        [
-          {
-              "title": "Slide #1",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          },
-          {
-              "title": "Slide #2",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          },
-          {
-              "title": "Slide #3",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          },
-          {
-              "title": "Slide #4",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          },
-          {
-              "title": "Slide #5",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          },
-          {
-              "title": "Slide #6",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          },
-          {
-              "title": "Slide #7",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          },
-          {
-              "title": "Slide #8",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          },
-          {
-              "title": "Slide #9",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          },
-          {
-              "title": "Slide #10",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          }
+      "images": [{
+          "title": "Slide #1",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        },
+        {
+          "title": "Slide #2",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        },
+        {
+          "title": "Slide #3",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        },
+        {
+          "title": "Slide #4",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        },
+        {
+          "title": "Slide #5",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        },
+        {
+          "title": "Slide #6",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        },
+        {
+          "title": "Slide #7",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        },
+        {
+          "title": "Slide #8",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        },
+        {
+          "title": "Slide #9",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        },
+        {
+          "title": "Slide #10",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        }
       ]
     },
     {
@@ -480,48 +462,46 @@
       "isFavourite": false,
       "quantity": 1,
       "category": 3,
-      "images":
-        [
-          {
-              "title": "Slide #1",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          },
-          {
-              "title": "Slide #2",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          },
-          {
-              "title": "Slide #3",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          },
-          {
-              "title": "Slide #4",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          },
-          {
-              "title": "Slide #5",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          },
-          {
-              "title": "Slide #6",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          },
-          {
-              "title": "Slide #7",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          },
-          {
-              "title": "Slide #8",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          },
-          {
-              "title": "Slide #9",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          },
-          {
-              "title": "Slide #10",
-              "src": "https://bulma.io/images/placeholders/128x128.png"
-          }
+      "images": [{
+          "title": "Slide #1",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        },
+        {
+          "title": "Slide #2",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        },
+        {
+          "title": "Slide #3",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        },
+        {
+          "title": "Slide #4",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        },
+        {
+          "title": "Slide #5",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        },
+        {
+          "title": "Slide #6",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        },
+        {
+          "title": "Slide #7",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        },
+        {
+          "title": "Slide #8",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        },
+        {
+          "title": "Slide #9",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        },
+        {
+          "title": "Slide #10",
+          "src": "https://bulma.io/images/placeholders/128x128.png"
+        }
       ]
     },
     {
@@ -642,8 +622,7 @@
       "category": 1
     }
   ],
-  "news": [
-    {
+  "news": [{
       "id": 0,
       "title": "amet nisi exercitation ex enim",
       "date": "Wed Jul 26 2006 15:49:19 GMT+0000 (UTC)",
@@ -808,5 +787,6 @@
     "openLoginModal": false,
     "openSignupModal": false,
     "openCheckoutModal": false
-  }
+  },
+  "viewedProductsArr": []
 }
