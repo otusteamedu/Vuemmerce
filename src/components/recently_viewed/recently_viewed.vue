@@ -55,8 +55,9 @@ export default {
   },
   methods: {
     repeatedItem(item) {
+      // check repeated item
       let viewedProductsArr = this.$store.state.viewedProductsArr;
-      if(viewedProductsArr.indexOf(parseInt(item))){
+      if (viewedProductsArr.indexOf(parseInt(item))) {
         return true;
       }
       return false;
