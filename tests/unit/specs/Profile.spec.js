@@ -1,17 +1,13 @@
 import { shallowMount, mount } from "@vue/test-utils";
-
 import { createRenderer } from 'vue-server-renderer'
 import component from "../../../src/components/profile/Profile";
 import store from "../../../src/store";
 import router from "../../../src/router";
 import messages from "../../../src/messages.json";
 import VueI18n from "vue-i18n";
-import Vue from "vue";
 
 const localVue = global.newVueInstance();
-//localVue.config.productionTip = false;
 
-//const localVue = createLocalVue()
 localVue.use(VueI18n);
 const i18n = new VueI18n({
     locale: 'en',
