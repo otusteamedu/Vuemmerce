@@ -53,6 +53,10 @@ const state = [
             "title": "Slide #10",
             "src": "https://bulma.io/images/placeholders/128x128.png"
         }
+    ],
+    "tags": [
+      1,
+      3
     ]
   },
   {
@@ -109,6 +113,10 @@ const state = [
             "title": "Slide #10",
             "src": "https://bulma.io/images/placeholders/128x128.png"
         }
+    ],
+    "tags": [
+      1,
+      2
     ]
   },
   {
@@ -165,6 +173,10 @@ const state = [
             "title": "Slide #10",
             "src": "https://bulma.io/images/placeholders/128x128.png"
         }
+    ],
+    "tags": [
+      2,
+      3
     ]
   },
   {
@@ -221,6 +233,11 @@ const state = [
             "title": "Slide #10",
             "src": "https://bulma.io/images/placeholders/128x128.png"
         }
+    ],
+    "tags": [
+      1,
+      2,
+      3
     ]
   },
   {
@@ -277,7 +294,8 @@ const state = [
             "title": "Slide #10",
             "src": "https://bulma.io/images/placeholders/128x128.png"
         }
-    ]
+    ],
+    "tags": []
   },
   {
     "id": 6,
@@ -333,6 +351,9 @@ const state = [
             "title": "Slide #10",
             "src": "https://bulma.io/images/placeholders/128x128.png"
         }
+    ],
+    "tags": [
+      3
     ]
   },
   {
@@ -389,6 +410,9 @@ const state = [
             "title": "Slide #10",
             "src": "https://bulma.io/images/placeholders/128x128.png"
         }
+    ],
+    "tags": [
+      2
     ]
   },
   {
@@ -445,7 +469,8 @@ const state = [
             "title": "Slide #10",
             "src": "https://bulma.io/images/placeholders/128x128.png"
         }
-    ]
+    ],
+    "tags": []
   },
   {
     "id": 9,
@@ -501,6 +526,9 @@ const state = [
             "title": "Slide #10",
             "src": "https://bulma.io/images/placeholders/128x128.png"
         }
+    ],
+    "tags": [
+      2
     ]
   },
   {
@@ -514,7 +542,11 @@ const state = [
     "isAddedBtn": false,
     "isFavourite": false,
     "quantity": 1,
-    "category": 1
+    "category": 1,
+    "tags": [
+      1,
+      3
+    ]
   },
   {
     "id": 11,
@@ -527,7 +559,11 @@ const state = [
     "isAddedBtn": false,
     "isFavourite": false,
     "quantity": 1,
-    "category": 2
+    "category": 2,
+    "tags": [
+      1,
+      3
+    ]
   },
   {
     "id": 12,
@@ -540,7 +576,11 @@ const state = [
     "isAddedBtn": false,
     "isFavourite": false,
     "quantity": 1,
-    "category": 1
+    "category": 1,
+    "tags": [
+      1,
+      3
+    ]
   },
   {
     "id": 13,
@@ -553,7 +593,8 @@ const state = [
     "isAddedBtn": false,
     "isFavourite": false,
     "quantity": 1,
-    "category": 1
+    "category": 1,
+    "tags": []
   },
   {
     "id": 14,
@@ -566,7 +607,8 @@ const state = [
     "isAddedBtn": false,
     "isFavourite": false,
     "quantity": 1,
-    "category": 2
+    "category": 2,
+    "tags": []
   },
   {
     "id": 15,
@@ -579,7 +621,8 @@ const state = [
     "isAddedBtn": false,
     "isFavourite": false,
     "quantity": 1,
-    "category": 3
+    "category": 3,
+    "tags": []
   },
   {
     "id": 16,
@@ -592,7 +635,8 @@ const state = [
     "isAddedBtn": false,
     "isFavourite": false,
     "quantity": 1,
-    "category": 1
+    "category": 1,
+    "tags": []
   },
   {
     "id": 17,
@@ -605,7 +649,8 @@ const state = [
     "isAddedBtn": false,
     "isFavourite": false,
     "quantity": 1,
-    "category": 1
+    "category": 1,
+    "tags": []
   },
   {
     "id": 18,
@@ -618,7 +663,8 @@ const state = [
     "isAddedBtn": false,
     "isFavourite": false,
     "quantity": 1,
-    "category": 1
+    "category": 1,
+    "tags": []
   }
 ];
 
@@ -659,6 +705,13 @@ const actions = {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
         resolve(getters.getProductsList.filter(product => String(product.category) === String(id)));
+      }, 2000);
+    })
+  },
+  pseudoFetchProductsByTagId ({ commit, getters }, id) {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        resolve(getters.getProductsList.filter(product => product.tags.includes(parseInt(id))));
       }, 2000);
     })
   },
