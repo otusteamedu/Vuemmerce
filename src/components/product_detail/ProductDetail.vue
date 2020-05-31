@@ -96,11 +96,19 @@
               </div>
               <template v-if="selectedTabIndex <= tabs.length && selectedTabIndex > 0">
                 <tabs 
-                  :tabs="tabs" 
-                  :selectedIndex="selectedTabIndex" 
-                  @click="tabChanged" />
+                :tabs="tabs" 
+                :selectedIndex="selectedTabIndex" 
+                @click="tabChanged" />
                 <div>{{ tabs[selectedTabIndex - 1].description }}</div>
               </template>
+              <div class="card-content__tags">
+                <h3>Tags</h3>
+                <b-taglist>
+                  <b-tag v-for="{id, title} in tags" rounded size="is-medium" :key="id">
+                    <router-link :to="`/tags/${id}`">{{ title }}</router-link>
+                  </b-tag>
+                </b-taglist>
+              </div>
             </div>
           </div>
         </div>
@@ -141,6 +149,7 @@ export default {
       product: {},
       selected: 1,
       category: null,
+      tags: [],
       isLoaded: false,
       quantityArray: [],
       packs: "fas",
@@ -190,6 +199,7 @@ export default {
         this.category = this.$store.getters.getCategoryById(
           currentProduct.category
         );
+        this.tags = currentProduct.tags.map(id => this.$store.getters.getTagById(id));
         this.isLoaded = true;
 
         loadingComponent.close();
@@ -281,14 +291,14 @@ export default {
     }
   },
   metaInfo() {
-    let title = 'Product';
+    let title = "Product";
     if (this.product && this.product.title) {
       title = this.product.title;
     }
     return {
-      title: `Vuemmerce | ${this.product.title}`,
+      title: `Vuemmerce | ${this.product.title}`
     };
-  },
+  }
 };
 </script>
 
@@ -304,6 +314,9 @@ export default {
     width: 100%;
     margin-bottom: 10px;
   }
+  &__tags a {
+  color: inherit;
+}
 }
 .skeleton {
   width: 100vw;

@@ -16,6 +16,9 @@ export default new Vuex.Store({
     getCategoryById: state => id => {
       return state.categories.find(category => category.id == id);
     },
+    getTagById: state => id => {
+      return state.tags.find(tag => tag.id == id)
+    },
     isUserLoggedIn: state => {
       return state.userInfo.isLoggedIn;
     },

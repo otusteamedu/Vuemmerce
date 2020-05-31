@@ -19,6 +19,23 @@
       "image": "http://lorempixel.com/640/480/technics/3/"
     }
   ],
+  "tags": [
+    {
+      "id": 1,
+      "title": "Tag 1",
+      "description": "Aliquip exercitation voluptate amet veniam ipsum laborum non et laborum aute nisi do sint."
+    },
+    {
+      "id": 2,
+      "title": "Tag 2",
+      "description":"Aute enim commodo do minim anim dolor magna minim."
+    },
+    {
+      "id": 3,
+      "title": "Tag 3",
+      "description":"At vero eos et accusamus et iusto odio dignissimos ducimus, qui blanditiis praesentium voluptatum deleniti atque corrupti."
+    }
+  ],
   "reviews": [
     {
       "id": 1,

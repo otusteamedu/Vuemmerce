@@ -30,6 +30,12 @@ export default new Router({
       component: CategoryProducts,
     },
     {
+      path: '/tags/:id',
+      name: 'productsByTag',
+      props: true,
+      component: () => import('./components/tags/TagProducts'),
+    },
+    {
       path: '/product-detail/:id',
       redirect: '/product-detail/:id/tab/1',
       name: 'product-detail-component',
