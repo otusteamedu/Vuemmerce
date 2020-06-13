@@ -253,7 +253,8 @@
     "isSignedUp": false,
     "name": "",
     "email": "",
-    "address": "",
+    "addresses": [],
+    "mainAddress": 0,
     "password": "",
     "avatarBinary": ""
   },

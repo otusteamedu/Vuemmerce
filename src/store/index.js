@@ -30,7 +30,7 @@ export default new Vuex.Store({
       return state.userInfo.email;
     },
     getUserAddress: state => {
-      return state.userInfo.address;
+      return state.userInfo.addresses[state.userInfo.mainAddress];
     },
     getUserPassword: state => {
       return state.userInfo.password;
@@ -102,8 +102,11 @@ export default new Vuex.Store({
     setUserEmail: (state, email) => {
       state.userInfo.email = email;
     },
-    setUserAddress: (state, address) => {
-      state.userInfo.address = address;
+    addUserAddress: (state, address) => {
+      state.userInfo.addresses.push(address);
+    },
+    setUserAddress: (state, index) => {
+      state.userInfo.mainAddress = index;
     },
     setUserPassword: (state, password) => {
       state.userInfo.password = password;
@@ -165,10 +168,10 @@ export default new Vuex.Store({
     orders,
     brands
   },
-  
+
   actions: {
     // eslint-disable-line no-unused-vars
-    doPasswordReset: ({}, { email }) => {
+    doPasswordReset: ({ }, { email }) => {
       return new Promise((resolve) => {
         setTimeout(() => {
           resolve();
