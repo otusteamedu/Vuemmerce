@@ -30,7 +30,7 @@ export default new Vuex.Store({
       return state.userInfo.email;
     },
     getUserAddress: state => {
-      return state.userInfo.address;
+      return state.userInfo.addresses[state.userInfo.mainAddress];
     },
     getUserPassword: state => {
       return state.userInfo.password;

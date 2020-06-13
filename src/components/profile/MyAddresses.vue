@@ -73,10 +73,6 @@ export default {
   .form-row {
     margin: 5px 0;
 
-    &:last-of-type {
-      margin-bottom: 25px;
-    }
-
     input {
       margin-right: 15px;
       width: 200px;
@@ -84,6 +80,7 @@ export default {
   }
 
   .add-button {
+    margin-top: 25px;
     margin-bottom: 50px;
   }
 
