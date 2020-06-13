@@ -91,6 +91,11 @@ export default new Router({
       component: () => import('./components/profile/MyOrders'),
     },
     {
+      path: '/my-addresses',
+      name: 'myAddresses',
+      component: () => import('./components/profile/MyAddresses'),
+    },
+    {
       path: '/compare',
       name: 'compare',
       component: Compare,
