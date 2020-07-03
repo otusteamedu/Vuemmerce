@@ -27,6 +27,28 @@ describe('"Orders" store module', () => {
             expect(store.getters.allOrders.length).toBe(prevLen + 1);
             expect(store.getters.allOrders[prevLen].id).toBe(lastOrder.id + 1);
         });
+
+        it('"fet all orders" should return orders with id, date, products, sum', async () => {
+            await store.dispatch(ACTIONS.FETCH_ALL);
+            expect(store.getters.allOrders).toEqual(
+                expect.arrayContaining([expect.objectContaining({
+                    id: expect.any(Number),
+                    createdAt: expect.any(String),
+                    products: expect.any(Array),
+                    sum: expect.any(Number)
+                })])
+            );
+        })
+
+        it('"create order" should create new order with id, date, products', async () => {
+            let [newOrder] = await Promise.all([store.dispatch(ACTIONS.CREATE, {products: [1, 2, 3]})]);
+            expect(newOrder).toMatchObject({
+                id: expect.any(Number),
+                createdAt: expect.any(String),
+                products: expect.any(Array)
+            });
+        });
+
     });
 
     describe('getters', async () => {
