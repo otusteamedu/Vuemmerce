@@ -17,7 +17,7 @@
                 <template v-for="order in allOrders">
                     <tr :key="order.id" class="order-data" @click="toggleExpand(order.id)">
                         <td>{{ order.id }}</td>
-                        <td>{{ order.date }}</td>
+                        <td>{{ order.createdAt | formatDate }}</td>
                         <td>{{ order.sum }}</td>
                         <td align="right">
                             <i
@@ -57,6 +57,7 @@
 import Vue from 'vue';
 import { mapActions, mapGetters } from 'vuex';
 import { ACTIONS } from '../../store/modules/orders/types';
+import moment from 'moment';
 
 export default {
     name: 'MyOrders',
@@ -94,6 +95,13 @@ export default {
     created() {
         if (this.allOrders.length === 0) {
             this[ACTIONS.FETCH_ALL]();
+        }
+    },
+    filters: {
+        formatDate: function (value) {
+            if (value) {
+                return moment(String(value)).format('DD MMM YYYY HH:mm')
+            }
         }
     }
 };
