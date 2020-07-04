@@ -4,65 +4,75 @@
             v-if="allOrders.length === 0"
             class="notification is-warning"
         >You have not ordered anything yet</div>
-        <table v-else class="table is-fullwidth is-hoverable">
-            <thead>
-                <tr>
-                    <th>Order ID</th>
-                    <th>Buy date</th>
-                    <th>Sum</th>
-                    <th></th>
-                </tr>
-            </thead>
-            <tbody>
-                <template v-for="order in allOrders">
-                    <tr :key="order.id" class="order-data" @click="toggleExpand(order.id)">
-                        <td>{{ order.id }}</td>
-                        <td>{{ order.createdAt | formatDate }}</td>
-                        <td>{{ order.sum }}</td>
-                        <td align="right">
-                            <i
-                                class="fa fa-chevron-down"
-                                aria-hidden="true"
-                                :ref="`chevron-${order.id}`"
-                            ></i>
-                        </td>
-                    </tr>
-                    <tr
-                        :key="`products-${order.id}`"
-                        :ref="`products-${order.id}`"
-                        class="products-data has-background-grey-light expand"
-                    >
-                        <td>
-                            <div class="content">
-                                <ul>
-                                    <li v-for="product in order.products" :key="product.id">
-                                        <router-link
-                                            :to="{name: 'product-detail-component', params: { id: product.id}}"
-                                        >{{products[product.id].title}} - {{ products[product.id].price }}</router-link>
-                                    </li>
-                                </ul>
-                            </div>
-                        </td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                </template>
-            </tbody>
-        </table>
+
+        <b-table v-else
+            :data="allOrders"
+            ref="table"
+            paginated
+            per-page="10"
+            detailed
+            detail-key="id"
+            :show-detail-icon="true">
+
+            <template slot-scope="props">
+
+                <b-table-column field="id" label="Order Id" width="100" numeric>
+                    {{ props.row.id }}
+                </b-table-column>
+
+                <b-table-column field="createdAt" label="Buy date" sortable centered>
+                    {{ props.row.createdAt | formatDate }}
+                </b-table-column>
+
+                <b-table-column field="sum" label="Sum" sortable numeric>
+                    <span class="tag is-success">{{ props.row.sum | formatCurrency }}</span>
+                </b-table-column>
+
+            </template>
+
+            <template slot="detail" slot-scope="props">
+                <article class="media">
+                    <div class="media-content">
+                        <ul>
+                            <li v-for="product in props.row.products" :key="product.id">
+                                <div class="columns">
+                                    <div class="column is-1">
+                                    <figure v-if="product.image" class="image is-64x64">
+                                        <img :src="product.image.src" :alt="product.image.title">
+                                    </figure>
+                                    <figure v-else class="image is-64x64">
+                                        <img src="https://bulma.io/images/placeholders/64x64.png">
+                                    </figure>
+                                    </div>
+                                    <div class="column">
+                                        <router-link :to="{name: 'product-detail-component', params: { id: product.id}}">
+                                            {{ products[product.id].title }}
+                                        </router-link>
+                                        <br>
+                                        {{ product.price | formatCurrency }}
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+            </template>
+        </b-table>
+
     </div>
 </template>
 
 <script>
-import Vue from 'vue';
 import { mapActions, mapGetters } from 'vuex';
 import { ACTIONS } from '../../store/modules/orders/types';
 import moment from 'moment';
+import '@mdi/font/css/materialdesignicons.css'
+import 'buefy/dist/buefy.css'
 
 export default {
     name: 'MyOrders',
     computed: {
-        ...mapGetters(['allOrders', 'getProductsList']),
+        ...mapGetters(['allOrders', 'getProductsList', 'getProductImages']),
         products() {
             if (!this.allOrders.length || !this.getProductsList.length) {
                 return {};
@@ -75,6 +85,7 @@ export default {
                     const product = this.getProductsList.find(
                         ({ id }) => id === curProduct.id
                     );
+                    curProduct.image = this.getProductImages(curProduct.id)[0];
                     return Object.assign({ title: product.title }, curProduct);
                 })
                 .map(product => [product.id, product]);
@@ -83,14 +94,7 @@ export default {
         }
     },
     methods: {
-        ...mapActions([ACTIONS.FETCH_ALL]),
-        toggleExpand(orderId) {
-            const element = this.$refs[`products-${orderId}`][0];
-            element.classList.toggle('expand');
-
-            const chevron = this.$refs[`chevron-${orderId}`][0];
-            chevron.classList.toggle('fa-chevron-up');
-        }
+        ...mapActions([ACTIONS.FETCH_ALL])
     },
     created() {
         if (this.allOrders.length === 0) {
@@ -99,31 +103,14 @@ export default {
     },
     filters: {
         formatDate: function (value) {
-            if (value) {
-                return moment(String(value)).format('DD MMM YYYY HH:mm')
-            }
+            if (!value) return '';
+            return moment(String(value)).format('DD MMM YYYY HH:mm');
+        },
+        formatCurrency: function (value) {
+            if (typeof value !== "number") return value;
+            const formatter = new Intl.NumberFormat('en-US', {style: 'currency', currency: 'EUR'});
+            return formatter.format(value);
         }
     }
 };
 </script>
-
-<style lang="scss" scoped>
-.container {
-    padding-top: 2.1rem;
-    padding-bottom: 2.1rem;
-}
-
-.order-data {
-    cursor: pointer;
-}
-
-.products-data {
-    &.expand {
-        display: none;
-    }
-
-    ul {
-        margin-top: 0;
-    }
-}
-</style>
