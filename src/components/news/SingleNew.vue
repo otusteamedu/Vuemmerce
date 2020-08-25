@@ -37,18 +37,20 @@
     </div>
   </social-sharing>
     
+    <promo-products></promo-products>
   </section>
 </template>
 
 <script>
 
-var SocialSharing = require('vue-social-sharing');
-
+import SocialSharing from 'vue-social-sharing';
+import PromoProducts from '../promo_products/PromoProducts';
 
 export default {
   name: 'news_detail-id',
   components: {
-    SocialSharing
+    SocialSharing,
+    'promo-products': PromoProducts,
   },
   computed: {
     currentUrl() {
@@ -76,7 +78,4 @@ export default {
   .description {
     margin-bottom: 30px;
   }
-
-
 </style>
-

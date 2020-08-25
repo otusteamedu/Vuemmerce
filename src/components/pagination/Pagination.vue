@@ -1,6 +1,6 @@
 <template>
     <section>
-        <div class="level" v-if="total">
+        <div class="level" v-if="total && !gridIsConstant">
             <div class="level-left"></div>
             <div class="level-right">
                 <div class="level-item">
@@ -50,7 +50,11 @@
       grid: {
         type: Number,
         default: 3
-      }
+      },
+      gridIsConstant: {
+        type: Boolean,
+        default: false,
+      },
     },
 
     data() {
