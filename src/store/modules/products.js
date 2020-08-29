@@ -709,6 +709,13 @@ const actions = {
       }, 2000);
     })
   },
+  pseudoFetchPromoProducts ({ commit, getters }) {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        resolve(getters.getProductsList.filter(product => getters.getOverallRatingProductById(product.id) >= 3));
+      }, 2000);
+    })
+  },
   pseudoFetchProductsWithFilter ({ commit, getters }, params) {
       return new Promise((resolve, reject) => {
           setTimeout(() => {

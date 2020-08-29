@@ -229,7 +229,7 @@ export default {
     min-height: 50px;
   }
   .rlink,
-  .rlinkk:hover,
+  .rlink:hover,
   .rlink:focus,
   .rlink:active {
     padding: 0;
