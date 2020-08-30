@@ -686,6 +686,9 @@ const getters = {
   getProductById: state => id => {
     return state.find(product => product.id == id);
   },
+  getProductsByIds: state => ids => {
+    return state.filter(product => ids.includes(product.id));
+  },
   getProductImages: state => id => {
     return state.find(product => product.id == id).images;
   },
@@ -701,6 +704,27 @@ const actions = {
         resolve(getters.getProductById(id));
       }, 2000);
     })
+  },
+  pseudoFetchViewedProducts ({ commit, getters }) {
+    const ids = JSON.parse(localStorage.getItem('recentlyViewed')) || [];
+
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        resolve(getters.getProductsByIds(ids));
+      }, 2000);
+    })
+  },
+  addToViewedProducts ({ commit, getters }, id) {
+    let recentlyViewed = JSON.parse(localStorage.getItem('recentlyViewed')) || [];
+
+    if (!recentlyViewed.includes(id)) {
+      recentlyViewed.push(id);
+      recentlyViewed = recentlyViewed.slice(-3);
+      localStorage.setItem('recentlyViewed', JSON.stringify(recentlyViewed));
+    }
+  },
+  clearViewedProducts () {
+    localStorage.removeItem('recentlyViewed');
   },
   pseudoFetchProducts ({ commit, getters }, id) {
     return new Promise((resolve, reject) => {

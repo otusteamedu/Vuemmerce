@@ -21,6 +21,8 @@
         </div>
       </template>
     </pagination-component>
+
+    <recently-viewed-component />
   </div>
 </template>
 
@@ -31,11 +33,13 @@ import PaginationComponent from '../pagination/Pagination'
 import CategoriesNavigation from '../categories_nav/CategoriesNavigation';
 import CategoryProductsFilter from "./CategoryProductsFilter";
 import brands from "../../store/modules/brands";
+import RecentlyViewedComponent from "../recently_viewed/RecentlyViewed";
 
 export default {
   name: 'products-list-component',
 
   components: {
+    RecentlyViewedComponent,
     CategoryProductsFilter,
     ProductsComponent,
     BreadcrumbsComponent,
